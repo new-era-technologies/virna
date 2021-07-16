@@ -157,7 +157,7 @@
                 width: 90px;
                 font-size: 16px;
                 line-height: 20px;
-                transform: rotate(90deg) translate(-15px, -30px);
+                transform: rotate(90deg) translate(-15px, -35px);
             }
         }
         &__text {
@@ -169,7 +169,7 @@
                 width: 39px;
                 font-size: 16px;
                 line-height: 20px;
-                transform: rotate(90deg) translate(55px, -7px);
+                transform: rotate(90deg) translate(55px, -10px);
             }
         }
     }
@@ -181,7 +181,7 @@
         }
     }
     .inner {
-        width: calc(100% - 80px);
+        width: auto;
     }
     .menu {
         &__item {
@@ -194,6 +194,30 @@
             }
             &--lang {
                 margin-left: 70px;
+            }
+        }
+    }
+}
+
+@media all and (min-width: 960px) {
+    .header {
+        &__title {
+            width: 240px;
+            margin-top: 80px;
+            font-size: 48px;
+            line-height: 48px;
+        }
+        &__text {
+            width: 90px;
+            font-size: 14px;
+            line-height: 14px;
+            &--year {
+                transform: rotate(90deg) translate(55px, -34px);
+            }
+        }
+        &__background {
+            &--pic {
+                background-position-x: 72%;
             }
         }
     }
