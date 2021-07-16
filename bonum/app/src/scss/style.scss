@@ -8,36 +8,37 @@
 }
 
 .container {
-    width: 360px;
+    width: 100%;
     margin: 0 auto;
+    padding: 0 15px;
     box-sizing: border-box;
 }
 
-@media screen and (min-width: 768px) {
+@media all and (min-width: 768px) {
     .container {
-        width: 768px;
+        padding: 0 40px;
     }
 }
 
-@media screen and (min-width: 960px) {
+@media all and (min-width: 960px) {
     .container {
         width: 960px;
     }
 }
 
-@media screen and (min-width: 1366px) {
+@media all and (min-width: 1366px) {
     .container {
         width: 1366px;
     }
 }
 
-@media screen and (min-width: 1440px) {
+@media all and (min-width: 1440px) {
     .container {
         width: 1440px;
     }
 }
 
-@media screen and (min-width: 1920px) {
+@media all and (min-width: 1920px) {
     .container {
         width: 1920px;
     }
