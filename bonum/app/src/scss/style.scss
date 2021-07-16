@@ -26,20 +26,14 @@
     }
 }
 
-@media all and (min-width: 1366px) {
-    .container {
-        width: 1366px;
-    }
-}
-
 @media all and (min-width: 1440px) {
     .container {
-        width: 1440px;
+        padding: 0 140px;
     }
 }
 
 @media all and (min-width: 1920px) {
     .container {
-        width: 1920px;
+        padding: 0 400px 0 75px;
     }
 }

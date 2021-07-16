@@ -222,3 +222,34 @@
         }
     }
 }
+
+@media all and (min-width: 1366px) {
+    .header {
+        &__title {
+            width: 450px;
+            margin-top: 155px;
+            font-size: 72px;
+            line-height: 72px;
+        }
+        &__background {
+            &--pic {
+                background-position-x: 84%;
+            }
+        }
+    }
+    .menu {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        list-style-type: none;
+        box-sizing: border-box;
+        &__item {
+            &--like {
+                margin-left: 83px;
+            }
+            &--lang {
+                margin-left: 212px;
+            }
+        }
+    }
+}
