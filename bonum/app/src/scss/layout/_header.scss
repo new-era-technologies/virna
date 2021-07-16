@@ -122,18 +122,79 @@
 }
 
 .lang {
-    width: 34px;
-    height: 20px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    cursor: pointer;
     &__dropbtn {
+        padding: 0;
         border: none;
         background: none;
         outline: none;
         @include font(Cera Pro, normal, 400, 14px, 18px, #000000);
+        cursor: pointer;
+    }
+    &__img {
+        margin-left: 5px;
     }
     &__cnt {
         display: none;
+    }
+}
+
+@media all and (min-width: 768px) {
+    .header {
+        &__wrapper {
+            padding-top: 30px;
+        }
+        &__inner {
+            align-items: center;
+        }
+        &__title {
+            margin-top: 60px;
+        }
+        &__link {
+            &--store {
+                width: 90px;
+                font-size: 16px;
+                line-height: 20px;
+                transform: rotate(90deg) translate(-15px, -30px);
+            }
+        }
+        &__text {
+            width: 80px;
+            font-size: 13px;
+            line-height: 13px;
+            transform: rotate(-90deg) translate(-40px, -30px);
+            &--year {
+                width: 39px;
+                font-size: 16px;
+                line-height: 20px;
+                transform: rotate(90deg) translate(55px, -7px);
+            }
+        }
+    }
+    .logo {
+        &__img {
+            &--virna {
+                margin-top: 0;
+            }
+        }
+    }
+    .inner {
+        width: calc(100% - 80px);
+    }
+    .menu {
+        &__item {
+            &--like {
+                margin-left: 63px;
+            }
+            &--camera,
+            &--cart {
+                margin-left: 22px;
+            }
+            &--lang {
+                margin-left: 70px;
+            }
+        }
     }
 }
