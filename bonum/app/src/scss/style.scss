@@ -1,0 +1,44 @@
+@import "base/reset";
+@import "base/fonts";
+@import "utils/mixins";
+@import "layout/header";
+@import "layout/footer";
+.main-wrapper {
+    background: #ffffff;
+}
+
+.container {
+    width: 360px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+@media screen and (min-width: 768px) {
+    .container {
+        width: 768px;
+    }
+}
+
+@media screen and (min-width: 960px) {
+    .container {
+        width: 960px;
+    }
+}
+
+@media screen and (min-width: 1366px) {
+    .container {
+        width: 1366px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .container {
+        width: 1440px;
+    }
+}
+
+@media screen and (min-width: 1920px) {
+    .container {
+        width: 1920px;
+    }
+}
