@@ -69,3 +69,95 @@
         @include font(Cera Pro, normal, 400, 13px, 30px, #000000);
     }
 }
+
+.clear {
+    width: 100%;
+    margin-top: 34px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: flex-end;
+    align-items: baseline;
+    &__btn {
+        padding: 0;
+        border: none;
+        outline: none;
+        @include font(Cera Pro, normal, 500, 13px, 30px, #000000);
+        cursor: pointer;
+        &--clear {
+            width: 50px;
+            height: 30px;
+            background: none;
+        }
+        &--close {
+            width: 20px;
+            height: 20px;
+            margin-right: 57px;
+            margin-left: 10px;
+            background: url(../assets/img/icons/close.svg) center no-repeat;
+        }
+    }
+}
+
+@media all and (min-width: 768px) {
+    .target {
+        &__wrapper {
+            padding-top: 100px;
+        }
+        &__title {
+            margin-left: 360px;
+        }
+        &__text {
+            width: 30px;
+            font-size: 14px;
+            line-height: 18px;
+            transform: rotate(-90deg) translate(-28px, -10px);
+        }
+        &__description {
+            width: 270px;
+            margin: 30px 0 0 auto;
+        }
+        &__inner {
+            height: 240px;
+            margin-top: 58px;
+        }
+        &__img {
+            top: -70px;
+            left: 50px;
+        }
+    }
+    .filters {
+        &__title {
+            width: 52px;
+            height: 18px;
+            font-size: 14px;
+            line-height: 18px;
+            transform: rotate(-90deg) translate(-70px, -10px);
+        }
+        &__list {
+            margin-top: 50px;
+            margin-right: 100px;
+        }
+        &__btn>span {
+            font-size: 13px;
+        }
+        &__qnt {
+            padding-top: 67px;
+        }
+    }
+    .clear {
+        margin-top: 15px;
+        &__btn {
+            &--close {
+                margin-right: 191px;
+            }
+        }
+    }
+}
+
+@media all and (min-width: 960px) {}
+
+@media all and (min-width: 1366px) {}
+
+@media all and (min-width: 1440px) {}
+
+@media all and (min-width: 1920px) {}
