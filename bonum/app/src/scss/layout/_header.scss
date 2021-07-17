@@ -256,6 +256,19 @@
         &__wrapper {
             padding-top: 155px;
         }
+        &__inner {
+            margin-right: 145px;
+        }
+        &__link {
+            &--store {
+                margin-right: 145px;
+            }
+        }
+        &__text {
+            &--year {
+                margin-right: 145px;
+            }
+        }
         &__title {
             margin-top: 222px;
             font-size: 74px;
