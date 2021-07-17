@@ -95,22 +95,16 @@
                             <h6 class="filters__title">filters</h6>
                             <ul class="filters__list">
                                 <li class="filters__item">
-                                    <button class="filters__btn">
-                                        <img src="assets/img/icons/completed.svg" alt="completed-icon">
-                                        <span>material</span>
-                                    </button>
+                                    <img src="assets/img/icons/completed.svg" alt="completed-icon">
+                                    <button class="filters__btn">material</button>
                                 </li>
                                 <li class="filters__item">
-                                    <button class="filters__btn">
-                                        <img src="assets/img/icons/completed.svg" alt="completed-icon">
-                                        <span>color</span>
-                                    </button>
+                                    <img src="assets/img/icons/completed.svg" alt="completed-icon">
+                                    <button class="filters__btn">color</button>
                                 </li>
                                 <li class="filters__item">
-                                    <button class="filters__btn">
-                                        <img src="assets/img/icons/completed.svg" alt="completed-icon">
-                                        <span>size</span>
-                                    </button>
+                                    <img src="assets/img/icons/completed.svg" alt="completed-icon">
+                                    <button class="filters__btn">size</button>
                                 </li>
                             </ul>
                             <p class="filters__qnt">
@@ -144,26 +138,52 @@
                     <h2 class="fashion__title">The world of fashion</h2>
                     <div class="fashion__inner">
                         <div class="fashion__pattern pattern">
-                            <ul class="pattern__list"></ul>
+                            <ul class="pattern__list">
+                                <li class="pattern__item">
+                                    <span>size</span>
+                                    <button>S / M</button>
+                                    <img src="../assets/img/icons/completed.svg" alt="completed-icon">
+                                </li>
+                                <li class="pattern__item">
+                                    <span>style</span>
+                                    <button>casual</button>
+                                    <img src="../assets/img/icons/completed.svg" alt="completed-icon">
+                                </li>
+                                <li class="pattern__item">
+                                    <span>color</span>
+                                    <button>blue</button>
+                                    <img src="../assets/img/icons/completed.svg" alt="completed-icon">
+                                </li>
+                            </ul>
                             <img class="pattern__img" srcset="assets/img/fashion/fashion1-360.png 330w,
                             assets/img/fashion/fashion1-960.png 370w,
-                            assets/img/fashion/fashion1-1366.png 570w" sizes="(max-width: 959px) 330px,
+                            assets/img/fashion/fashion1-1366.png 570w" sizes="(max-width: 959px) 315px,
                     (max-width: 1365px) 370px, (max-width: 1919px) 570px,
                     690px" src="assets/img/fashion/fashion1-1920.png" alt="fashion-img">
                         </div>
                         <div class="fashion__card card">
                             <p class="card__description">is woven from stories</p>
                             <figure class="card__figure figure">
-                                <img class="card__img" srcset="assets/img/fashion/fashion2-360.png 170w,
+                                <img class="figure__img" srcset="assets/img/fashion/fashion2-360.png 170w,
                                 assets/img/fashion/fashion2-1366.png 280w" sizes="(max-width: 1365px) 170px, (max-width: 1919px) 280px,
                         330px" src="assets/img/fashion/fashion2-1920.png" alt="fashion-img">
-                                <ul class="figure__recs recs"></ul>
+                                <ul class="figure__list">
+                                    <li class="figure__item fig-item-active">
+                                        <button class="figure__btn figure__btn--pink"></button>
+                                    </li>
+                                    <li class="figure__item">
+                                        <button class="figure__btn figure__btn--blue"></button>
+                                    </li>
+                                    <li class="figure__item">
+                                        <button class="figure__btn figure__btn--red"></button>
+                                    </li>
+                                </ul>
                                 <figcaption>
                                     <h6 class="figure__title">Название товара может быть длинное</h6>
                                     <p class="figure__price">1150 грн</p>
                                 </figcaption>
                             </figure>
-                            <p class="card__text">product card</p>
+                            <a href="#product-card" class="card__link" target="_blank">product card</a>
                         </div>
                     </div>
                 </div>
