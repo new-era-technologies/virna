@@ -184,11 +184,285 @@
     }
 }
 
-@media all and (min-width: 1366px) {}
+@media all and (min-width: 1366px) {
+    .fashion {
+        &__wrapper {
+            padding-top: 213px;
+        }
+        &__title {
+            width: 470px;
+            margin-left: 600px;
+            font-size: 56px;
+            line-height: 70px;
+        }
+        &__inner {
+            padding-top: 0;
+        }
+    }
+    .pattern {
+        &__list {
+            margin-left: 100px;
+        }
+        &__item {
+            margin-right: 60px;
+        }
+    }
+    .card {
+        &__description {
+            font-size: 16px;
+            line-height: 18px;
+        }
+        &__figure {
+            width: 280px;
+            margin: 36px 170px 0 auto;
+        }
+        &__link {
+            font-size: 16px;
+            line-height: 20px;
+        }
+    }
+    .figure {
+        &__list {
+            margin: 18px auto 0;
+        }
+        &__title {
+            font-size: 14px;
+            line-height: 18px;
+        }
+    }
+}
 
-@media all and (min-width: 1440px) {}
+@media all and (min-width: 1440px) {
+    .fashion {
+        margin-bottom: 150px;
+        &__wrapper {
+            padding-top: 40px;
+            box-sizing: border-box;
+        }
+        &__title {
+            width: 220px;
+            @include font(Cera Pro, normal, 700, 32px, 40px, #000000);
+        }
+        &__inner {
+            padding-top: 30px;
+            display: flex;
+            flex-direction: column;
+        }
+    }
+    .pattern {
+        &__list {
+            display: flex;
+            align-items: center;
+        }
+        &__item {
+            margin-right: 15px;
+            display: flex;
+            align-items: center;
+            @include font(Cera Pro, normal, 400, 13px, 30px, #808080);
+        }
+        &__item>button {
+            margin-left: 7px;
+            padding: 0;
+            @include font(Cera Pro, normal, 500, 13px, 30px, #000000);
+            border: none;
+            background: none;
+            outline: none;
+            cursor: pointer;
+        }
+        &__img {
+            margin: 30px auto 0;
+            display: block;
+        }
+    }
+    .card {
+        padding-top: 30px;
+        &__description {
+            @include font(Cera Pro, normal, 400, 14px, 16px, #000000);
+            text-align: right;
+        }
+        &__figure {
+            width: 170px;
+            margin: 30px 45px 0 auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        &__link {
+            width: 100px;
+            margin-left: auto;
+            display: block;
+            @include font(Cera Pro, normal, 400, 12px, 15px, #000000);
+            letter-spacing: 0.04em;
+            text-transform: uppercase;
+            transform: rotate(-90deg) translate(185px, 45px);
+            text-decoration: none;
+        }
+    }
+    .figure {
+        &__list {
+            width: 70px;
+            margin: 30px auto 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        &__item {
+            width: 20px;
+            height: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid transparent;
+            box-sizing: border-box;
+        }
+        &__btn {
+            width: 10px;
+            height: 10px;
+            padding: 0;
+            border: none;
+            outline: none;
+            box-sizing: border-box;
+            cursor: pointer;
+            &--pink {
+                background: #EEDBD5;
+            }
+            &--blue {
+                background: #82BDCF;
+            }
+            &--red {
+                background: #9C1744;
+            }
+        }
+        &__title {
+            margin-top: 15px;
+            @include font(Cera Pro, normal, 300, 12px, 15px, #000000);
+            text-align: center;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+        }
+        &__price {
+            margin-top: 15px;
+            @include font(Cera Pro, normal, 400, 14px, 18px, #000000);
+            text-align: center;
+        }
+    }
+}
 
-@media all and (min-width: 1920px) {}
+@media all and (min-width: 1920px) {
+    .fashion {
+        margin-bottom: 150px;
+        &__wrapper {
+            padding-top: 40px;
+            box-sizing: border-box;
+        }
+        &__title {
+            width: 220px;
+            @include font(Cera Pro, normal, 700, 32px, 40px, #000000);
+        }
+        &__inner {
+            padding-top: 30px;
+            display: flex;
+            flex-direction: column;
+        }
+    }
+    .pattern {
+        &__list {
+            display: flex;
+            align-items: center;
+        }
+        &__item {
+            margin-right: 15px;
+            display: flex;
+            align-items: center;
+            @include font(Cera Pro, normal, 400, 13px, 30px, #808080);
+        }
+        &__item>button {
+            margin-left: 7px;
+            padding: 0;
+            @include font(Cera Pro, normal, 500, 13px, 30px, #000000);
+            border: none;
+            background: none;
+            outline: none;
+            cursor: pointer;
+        }
+        &__img {
+            margin: 30px auto 0;
+            display: block;
+        }
+    }
+    .card {
+        padding-top: 30px;
+        &__description {
+            @include font(Cera Pro, normal, 400, 14px, 16px, #000000);
+            text-align: right;
+        }
+        &__figure {
+            width: 170px;
+            margin: 30px 45px 0 auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        &__link {
+            width: 100px;
+            margin-left: auto;
+            display: block;
+            @include font(Cera Pro, normal, 400, 12px, 15px, #000000);
+            letter-spacing: 0.04em;
+            text-transform: uppercase;
+            transform: rotate(-90deg) translate(185px, 45px);
+            text-decoration: none;
+        }
+    }
+    .figure {
+        &__list {
+            width: 70px;
+            margin: 30px auto 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        &__item {
+            width: 20px;
+            height: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid transparent;
+            box-sizing: border-box;
+        }
+        &__btn {
+            width: 10px;
+            height: 10px;
+            padding: 0;
+            border: none;
+            outline: none;
+            box-sizing: border-box;
+            cursor: pointer;
+            &--pink {
+                background: #EEDBD5;
+            }
+            &--blue {
+                background: #82BDCF;
+            }
+            &--red {
+                background: #9C1744;
+            }
+        }
+        &__title {
+            margin-top: 15px;
+            @include font(Cera Pro, normal, 300, 12px, 15px, #000000);
+            text-align: center;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+        }
+        &__price {
+            margin-top: 15px;
+            @include font(Cera Pro, normal, 400, 14px, 18px, #000000);
+            text-align: center;
+        }
+    }
+}
 
 .fig-item-active {
     border: 1px solid #000000;
