@@ -315,27 +315,30 @@
 
 @media all and (min-width: 1440px) {
     .colors {
-        &__wrapper {}
-        &__title {}
-        &__text {}
-        &__description {}
+        &__description {
+            margin: 32px 150px 0 auto;
+        }
     }
     .project {
-        &__title {}
-        &__description {}
+        margin-top: 52px;
         &__text {
-            &--bright {}
+            transform: rotate(-90deg) translate(77px, 22px);
+            &--bright {
+                transform: rotate(-90deg) translate(45px, 22px);
+            }
         }
-        &__inner {}
-        &__rec {}
+        &__inner {
+            margin-top: -22px;
+        }
+        &__rec {
+            margin-right: 0;
+        }
     }
     .recs {
-        &--right {}
-        &--left {}
-        &__rec>div {}
-        &__rec>p {}
-        &__rec {}
-        &--six {}
+        &--right {
+            margin-top: 45px;
+            margin-right: 120px;
+        }
     }
 }
 
