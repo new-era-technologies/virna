@@ -32,6 +32,7 @@
         @include font(Cera Pro, normal, 500, 13px, 13px, #000000);
         letter-spacing: 0.04em;
         transform: rotate(-90deg) translate(-40px, -30px);
+        text-align: right;
         &--year {
             width: 34px;
             margin-left: auto;
@@ -45,7 +46,7 @@
         position: absolute;
         z-index: 1;
         &--blur {
-            width: 45%;
+            width: 51%;
             height: 100vh;
             top: 0;
             left: 0;
@@ -55,10 +56,10 @@
             background-position-x: 100%;
         }
         &--pic {
-            width: 35%;
+            width: 30%;
             height: 100vh;
             top: 0;
-            left: 45%;
+            left: 51%;
             background: url(../assets/img/header/bg.png);
             background-repeat: no-repeat;
             background-size: cover;
@@ -79,7 +80,7 @@
 .inner {
     width: calc(100% - 30px);
     position: fixed;
-    bottom: 30px;
+    bottom: 32px;
     box-sizing: border-box;
 }
 
@@ -227,11 +228,27 @@
 
 @media all and (min-width: 1366px) {
     .header {
+        &__wrapper {
+            padding-top: 29px;
+        }
         &__title {
             width: 450px;
-            margin-top: 155px;
+            margin-top: 151px;
             font-size: 72px;
             line-height: 72px;
+        }
+        &__link {
+            &--store {
+                transform: rotate(90deg) translate(-24px, -35px);
+            }
+        }
+        &__text {
+            transform: rotate(-90deg) translate(-38px, -31px);
+            &--year {
+                font-size: 16px;
+                line-height: 20px;
+                transform: rotate(90deg) translate(48px, -10px);
+            }
         }
     }
     .menu {
@@ -242,10 +259,14 @@
         box-sizing: border-box;
         &__item {
             &--like {
-                margin-left: 83px;
+                margin-left: 82px;
+            }
+            &--camera,
+            &--cart {
+                margin-left: 15px;
             }
             &--lang {
-                margin-left: 212px;
+                margin-left: 210px;
             }
         }
     }

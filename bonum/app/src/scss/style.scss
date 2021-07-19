@@ -28,6 +28,12 @@
     }
 }
 
+@media all and (min-width: 1366px) {
+    .container {
+        padding: 0 98px;
+    }
+}
+
 @media all and (min-width: 1440px) {
     .container {
         padding: 0 140px;
