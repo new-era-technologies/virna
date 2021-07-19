@@ -1,0 +1,318 @@
+.fashion {
+    &__wrapper {
+        padding-top: 40px;
+        box-sizing: border-box;
+    }
+    &__title {
+        width: 220px;
+        @include font(Cera Pro, normal, 700, 32px, 40px, #000000);
+    }
+    &__inner {
+        padding-top: 30px;
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.pattern {
+    &__list {
+        display: flex;
+        align-items: center;
+    }
+    &__item {
+        margin-right: 16px;
+        display: flex;
+        align-items: center;
+        @include font(Cera Pro, normal, 400, 13px, 30px, #808080);
+    }
+    &__item>button {
+        margin-left: 7px;
+        padding: 0;
+        @include font(Cera Pro, normal, 500, 13px, 30px, #000000);
+        border: none;
+        background: none;
+        outline: none;
+        cursor: pointer;
+    }
+    &__img {
+        margin: 30px auto 0;
+        display: block;
+    }
+}
+
+.card {
+    padding-top: 43px;
+    &__description {
+        margin-right: -15px;
+        @include font(Cera Pro, normal, 400, 14px, 16px, #000000);
+        text-align: right;
+    }
+    &__figure {
+        width: 170px;
+        margin: 30px 30px 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    &__link {
+        width: 100px;
+        margin-left: auto;
+        display: block;
+        @include font(Cera Pro, normal, 400, 12px, 15px, #000000);
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+        transform: rotate(-90deg) translate(185px, 57px);
+        text-decoration: none;
+    }
+}
+
+.figure {
+    &__list {
+        width: 70px;
+        margin: 30px auto 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__item {
+        width: 20px;
+        height: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid transparent;
+        box-sizing: border-box;
+    }
+    &__btn {
+        width: 10px;
+        height: 10px;
+        padding: 0;
+        border: none;
+        outline: none;
+        box-sizing: border-box;
+        cursor: pointer;
+        &--pink {
+            background: #EEDBD5;
+        }
+        &--blue {
+            background: #82BDCF;
+        }
+        &--red {
+            background: #9C1744;
+        }
+    }
+    &__title {
+        margin-top: 15px;
+        @include font(Cera Pro, normal, 300, 12px, 15px, #000000);
+        text-align: center;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+    }
+    &__price {
+        margin-top: 15px;
+        @include font(Cera Pro, normal, 400, 14px, 18px, #000000);
+        text-align: center;
+    }
+}
+
+@media all and (min-width: 768px) {
+    .fashion {
+        &__wrapper {
+            padding-top: 72px;
+        }
+        &__title {
+            margin-left: 360px;
+        }
+        &__inner {
+            padding-top: 35px;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: baseline;
+        }
+    }
+    .pattern {
+        &__list {
+            margin-left: 60px;
+        }
+        &__img {
+            margin: 30px 0 0 0;
+        }
+    }
+    .card {
+        padding-top: 0;
+        &__description {
+            margin-right: -16px;
+        }
+        &__figure {
+            width: 172px;
+            margin: 40px 81px 0 auto;
+        }
+        &__link {
+            width: 130px;
+            font-size: 14px;
+            line-height: 18px;
+            transform: rotate(-90deg) translate(187px, 72px);
+        }
+    }
+    .figure {
+        &__title {
+            width: 170px;
+        }
+        &__list {
+            margin: 15px auto 0;
+        }
+    }
+}
+
+@media all and (min-width: 960px) {
+    .fashion {
+        &__wrapper {
+            padding-top: 97px;
+        }
+        &__title {
+            margin-left: 397px;
+            font-size: 36px;
+            line-height: 45px;
+        }
+        &__inner {
+            padding-top: 0;
+        }
+    }
+    .pattern {
+        &__list {
+            margin-left: 77px;
+        }
+    }
+    .card {
+        &__description {
+            margin-right: -22px;
+        }
+        &__figure {
+            margin: 40px 95px 0 auto;
+        }
+        &_link {
+            transform: rotate(-90deg) translate(187px, 78px);
+        }
+    }
+}
+
+@media all and (min-width: 1366px) {
+    .fashion {
+        &__wrapper {
+            padding-top: 213px;
+        }
+        &__title {
+            width: 470px;
+            margin-left: 600px;
+            font-size: 56px;
+            line-height: 70px;
+        }
+        &__inner {
+            margin-top: -10px;
+            padding-top: 0;
+        }
+    }
+    .pattern {
+        &__list {
+            margin-left: 101px;
+        }
+        &__item {
+            margin-right: 60px;
+        }
+    }
+    .card {
+        &__description {
+            margin-right: -15px;
+            font-size: 16px;
+            line-height: 18px;
+        }
+        &__figure {
+            width: 280px;
+            margin: 37px 175px 0 auto;
+        }
+        &__link {
+            font-size: 16px;
+            line-height: 20px;
+            transform: rotate(-90deg) translate(200px, 70px);
+        }
+    }
+    .figure {
+        &__list {
+            margin: 18px auto 0;
+        }
+        &__title {
+            margin-top: 18px;
+            font-size: 14px;
+            line-height: 18px;
+        }
+    }
+}
+
+@media all and (min-width: 1440px) {
+    .fashion {
+        &__wrapper {
+            padding-top: 202px;
+        }
+        &__inner {
+            margin-top: -9px;
+        }
+    }
+    .card {
+        &__description {
+            margin-right: 0;
+        }
+        &__figure {
+            margin: 37px 190px 0 auto;
+        }
+        &__link {
+            transform: rotate(-90deg) translate(200px, 55px);
+        }
+    }
+}
+
+@media all and (min-width: 1920px) {
+    .fashion {
+        &__wrapper {
+            padding-top: 247px;
+        }
+        &__title {
+            margin-left: 902px;
+        }
+        &__inner {
+            margin-top: -12px;
+        }
+    }
+    .pattern {
+        &__list {
+            margin-left: 338px;
+        }
+        &__img {
+            margin-left: 182px;
+        }
+    }
+    .card {
+        &__figure {
+            width: 330px;
+            margin: 40px 240px 0 auto;
+        }
+        &__link {
+            transform: rotate(-90deg) translate(309px, 55px);
+        }
+    }
+    .figure {
+        &__list {
+            margin: 50px auto 0;
+        }
+        &__title {
+            width: 277px;
+            margin: 17px auto 0;
+        }
+        &__price {
+            margin-top: 15px;
+        }
+    }
+}
+
+.fig-item-active {
+    border: 1px solid #000000;
+}

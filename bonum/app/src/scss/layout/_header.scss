@@ -1,1 +1,369 @@
-.header {}
+.header {
+    &__wrapper {
+        width: 100%;
+        height: 100vh;
+        padding-top: 30px;
+        box-sizing: border-box;
+        position: relative;
+        z-index: 2;
+    }
+    &__inner {
+        width: 100%;
+        margin-left: 7px;
+        display: flex;
+        justify-content: space-between;
+        box-sizing: border-box;
+    }
+    &__title {
+        width: 200px;
+        margin-top: 50px;
+        @include font(Cera Pro, normal, 700, 42px, 42px, #000000);
+        letter-spacing: 0.02em;
+    }
+    &__link {
+        text-decoration: none;
+        &--store {
+            width: 80px;
+            margin-left: auto;
+            display: flex;
+            @include font(Cera Pro, normal, 400, 14px, 18px, #000000);
+            transform: rotate(90deg) translate(-16px, -46px);
+        }
+    }
+    &__text {
+        width: 80px;
+        @include font(Cera Pro, normal, 500, 13px, 13px, #000000);
+        letter-spacing: 0.04em;
+        transform: rotate(-90deg) translate(-39px, -26px);
+        text-align: right;
+        &--year {
+            width: 34px;
+            margin-left: auto;
+            font-size: 14px;
+            line-height: 18px;
+            letter-spacing: 0;
+            transform: rotate(90deg) translate(36px, -23px);
+        }
+    }
+    &__background {
+        position: absolute;
+        z-index: 1;
+        &--blur {
+            width: 51%;
+            height: 100vh;
+            top: 0;
+            left: 0;
+            background: url(../assets/img/header/bg-blur.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position-x: 100%;
+        }
+        &--pic {
+            width: 30%;
+            height: 100vh;
+            top: 0;
+            left: 51%;
+            background: url(../assets/img/header/bg.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position-x: 56%;
+        }
+    }
+}
+
+.logo {
+    display: block;
+    &__img {
+        &--virna {
+            margin-top: 7px;
+        }
+    }
+}
+
+.inner {
+    width: calc(100% - 30px);
+    position: fixed;
+    bottom: 32px;
+    box-sizing: border-box;
+}
+
+.menu {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    box-sizing: border-box;
+    &__item {
+        &--like {
+            margin-left: 31px;
+        }
+        &--camera,
+        &--cart {
+            margin-left: 17px;
+        }
+        &--lang {
+            margin-left: auto;
+        }
+    }
+    &__link {
+        width: 20px;
+        height: 20px;
+        display: flex;
+        text-decoration: none;
+    }
+}
+
+.burger {
+    width: 18px;
+    height: 13px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+    &__line {
+        width: 18px;
+        height: 1px;
+        background: #000000;
+    }
+}
+
+.lang {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    &__dropbtn {
+        padding: 0;
+        border: none;
+        background: none;
+        outline: none;
+        @include font(Cera Pro, normal, 400, 14px, 18px, #000000);
+        cursor: pointer;
+    }
+    &__img {
+        margin-left: 5px;
+    }
+    &__cnt {
+        display: none;
+    }
+}
+
+@media all and (min-width: 768px) {
+    .header {
+        &__wrapper {
+            padding-top: 30px;
+        }
+        &__inner {
+            margin-left: 0;
+            align-items: center;
+        }
+        &__title {
+            margin-top: 57px;
+        }
+        &__link {
+            &--store {
+                width: 90px;
+                font-size: 16px;
+                line-height: 20px;
+                transform: rotate(90deg) translate(-6px, -51px);
+            }
+        }
+        &__text {
+            width: 80px;
+            font-size: 13px;
+            line-height: 13px;
+            transform: rotate(-90deg) translate(-37px, -24px);
+            &--year {
+                width: 39px;
+                font-size: 16px;
+                line-height: 20px;
+                transform: rotate(90deg) translate(42px, -25px);
+            }
+        }
+        &__background {
+            &--pic {
+                background-position-x: 75%;
+            }
+        }
+    }
+    .logo {
+        &__img {
+            &--virna {
+                margin-top: 0;
+            }
+        }
+    }
+    .inner {
+        width: auto;
+    }
+    .menu {
+        &__item {
+            &--like {
+                margin-left: 61px;
+            }
+            &--camera,
+            &--cart {
+                margin-left: 17px;
+            }
+            &--lang {
+                margin-left: 66px;
+            }
+        }
+    }
+}
+
+@media all and (min-width: 960px) {
+    .header {
+        &__title {
+            width: 240px;
+            margin-top: 75px;
+            font-size: 48px;
+            line-height: 48px;
+        }
+        &__link {
+            &--store {
+                transform: rotate(90deg) translate(2px, -59px);
+            }
+        }
+        &__text {
+            width: 90px;
+            font-size: 14px;
+            line-height: 14px;
+            transform: rotate(-90deg) translate(-26px, -29px);
+            &--year {
+                font-size: 16px;
+                line-height: 20px;
+                transform: rotate(90deg) translate(22px, -59px);
+            }
+        }
+    }
+}
+
+@media all and (min-width: 1366px) {
+    .header {
+        &__wrapper {
+            padding-top: 29px;
+        }
+        &__title {
+            width: 450px;
+            margin-top: 151px;
+            font-size: 72px;
+            line-height: 72px;
+        }
+        &__link {
+            &--store {
+                transform: rotate(90deg) translate(-24px, -35px);
+            }
+        }
+        &__text {
+            transform: rotate(-90deg) translate(-38px, -31px);
+            &--year {
+                font-size: 16px;
+                line-height: 20px;
+                transform: rotate(90deg) translate(48px, -35px);
+            }
+        }
+    }
+    .menu {
+        &__item {
+            &--like {
+                margin-left: 82px;
+            }
+            &--camera,
+            &--cart {
+                margin-left: 15px;
+            }
+            &--lang {
+                margin-left: 210px;
+            }
+        }
+    }
+}
+
+@media all and (min-width: 1440px) {
+    .header {
+        &__wrapper {
+            margin: 0 5px;
+        }
+        &__title {
+            margin-top: 145px;
+        }
+        &__link {
+            &--store {
+                transform: rotate(90deg) translate(-22px, -35px);
+            }
+        }
+        &__text {
+            &--year {
+                font-size: 16px;
+                line-height: 20px;
+                transform: rotate(90deg) translate(-2px, -35px);
+            }
+        }
+    }
+    .menu {
+        &__item {
+            &--like {
+                margin-left: 79px;
+            }
+        }
+    }
+}
+
+@media all and (min-width: 1920px) {
+    .header {
+        &__wrapper {
+            padding-top: 153px;
+        }
+        &__inner {
+            margin-right: 145px;
+        }
+        &__link {
+            &--store {
+                margin-right: 145px;
+                transform: rotate(90deg) translate(58px, -35px);
+            }
+        }
+        &__text {
+            transform: rotate(-90deg) translate(-44px, -32px);
+            &--year {
+                margin-right: 145px;
+                transform: rotate(90deg) translate(82px, -35px);
+            }
+        }
+        &__title {
+            margin-top: 213px;
+            font-size: 74px;
+            line-height: 74px;
+            letter-spacing: 0;
+        }
+        &__background {
+            &--blur {
+                width: 35%;
+            }
+            &--pic {
+                left: 35%;
+            }
+        }
+    }
+    .logo {
+        &__img {
+            &--virna {
+                margin-top: 0;
+            }
+        }
+    }
+    .menu {
+        &__item {
+            &--like {
+                margin-left: 120px;
+            }
+            &--camera,
+            &--cart {
+                margin-left: 0;
+            }
+            &--lang {
+                margin-left: 291px;
+            }
+        }
+    }
+}

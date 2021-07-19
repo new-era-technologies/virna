@@ -2,43 +2,46 @@
 @import "base/fonts";
 @import "utils/mixins";
 @import "layout/header";
-@import "layout/footer";
+@import "layout/target";
+@import "layout/fashion";
+@import "layout/colors";
 .main-wrapper {
     background: #ffffff;
 }
 
 .container {
-    width: 360px;
+    width: 100%;
     margin: 0 auto;
+    padding: 0 15px;
     box-sizing: border-box;
 }
 
-@media screen and (min-width: 768px) {
+@media all and (min-width: 768px) {
     .container {
-        width: 768px;
+        padding: 0 40px;
     }
 }
 
-@media screen and (min-width: 960px) {
+@media all and (min-width: 960px) {
     .container {
-        width: 960px;
+        padding: 0 100px;
     }
 }
 
-@media screen and (min-width: 1366px) {
+@media all and (min-width: 1366px) {
     .container {
-        width: 1366px;
+        padding: 0 98px;
     }
 }
 
-@media screen and (min-width: 1440px) {
+@media all and (min-width: 1440px) {
     .container {
-        width: 1440px;
+        padding: 0 135px;
     }
 }
 
-@media screen and (min-width: 1920px) {
+@media all and (min-width: 1920px) {
     .container {
-        width: 1920px;
+        padding: 0 255px 0 72px;
     }
 }
