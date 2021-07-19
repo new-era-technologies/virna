@@ -166,12 +166,16 @@
 @media all and (min-width: 960px) {
     .target {
         &__title {
-            margin-left: 400px;
+            margin-left: 397px;
             font-size: 24px;
             line-height: 30px;
         }
+        &__text {
+            transform: rotate(-90deg) translate(-38px, -9px);
+        }
         &__description {
             width: 290px;
+            margin: 42px -22px 0 auto;
             font-size: 13px;
             line-height: 18px;
         }
@@ -179,26 +183,27 @@
             margin-top: 28px;
         }
         &__img {
-            top: -96px;
+            top: -98px;
             left: 145px;
         }
     }
     .filters {
         &__title {
-            transform: rotate(-90deg) translate(-85px, -50px);
+            transform: rotate(-90deg) translate(-83px, -44px);
         }
         &__list {
-            margin-top: 68px;
+            margin-top: 66px;
             margin-right: 93px;
         }
         &__qnt {
-            padding-top: 15px;
+            padding-top: 13px;
         }
     }
     .clear {
+        margin-top: 19px;
         &__btn {
             &--close {
-                margin-right: 206px;
+                margin-right: 189px;
             }
         }
     }

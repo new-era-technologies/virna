@@ -170,22 +170,28 @@
             padding-top: 97px;
         }
         &__title {
-            margin-left: 360px;
+            margin-left: 397px;
             font-size: 36px;
             line-height: 45px;
         }
         &__inner {
-            padding-top: 5px;
+            padding-top: 0;
         }
     }
     .pattern {
         &__list {
-            margin-left: 75px;
+            margin-left: 77px;
         }
     }
     .card {
+        &__description {
+            margin-right: -22px;
+        }
         &__figure {
-            margin: 37px 100px 0 auto;
+            margin: 40px 95px 0 auto;
+        }
+        &_link {
+            transform: rotate(-90deg) translate(187px, 78px);
         }
     }
 }

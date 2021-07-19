@@ -215,16 +215,24 @@
     .header {
         &__title {
             width: 240px;
-            margin-top: 80px;
+            margin-top: 75px;
             font-size: 48px;
             line-height: 48px;
+        }
+        &__link {
+            &--store {
+                transform: rotate(90deg) translate(2px, -59px);
+            }
         }
         &__text {
             width: 90px;
             font-size: 14px;
             line-height: 14px;
+            transform: rotate(-90deg) translate(-26px, -29px);
             &--year {
-                transform: rotate(90deg) translate(55px, -34px);
+                font-size: 16px;
+                line-height: 20px;
+                transform: rotate(90deg) translate(22px, -59px);
             }
         }
     }
