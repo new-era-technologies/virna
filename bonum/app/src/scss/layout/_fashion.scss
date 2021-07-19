@@ -195,12 +195,13 @@
             line-height: 70px;
         }
         &__inner {
+            margin-top: -10px;
             padding-top: 0;
         }
     }
     .pattern {
         &__list {
-            margin-left: 100px;
+            margin-left: 101px;
         }
         &__item {
             margin-right: 60px;
@@ -208,16 +209,18 @@
     }
     .card {
         &__description {
+            margin-right: -15px;
             font-size: 16px;
             line-height: 18px;
         }
         &__figure {
             width: 280px;
-            margin: 36px 170px 0 auto;
+            margin: 37px 175px 0 auto;
         }
         &__link {
             font-size: 16px;
             line-height: 20px;
+            transform: rotate(-90deg) translate(200px, 70px);
         }
     }
     .figure {
@@ -225,6 +228,7 @@
             margin: 18px auto 0;
         }
         &__title {
+            margin-top: 18px;
             font-size: 14px;
             line-height: 18px;
         }
