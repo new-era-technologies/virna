@@ -2,18 +2,21 @@
     &__wrapper {
         width: 100%;
         height: 100vh;
-        padding-top: 40px;
+        padding-top: 30px;
         box-sizing: border-box;
         position: relative;
         z-index: 2;
     }
     &__inner {
+        width: 100%;
+        margin-left: 7px;
         display: flex;
         justify-content: space-between;
+        box-sizing: border-box;
     }
     &__title {
         width: 200px;
-        margin-top: 70px;
+        margin-top: 50px;
         @include font(Cera Pro, normal, 700, 42px, 42px, #000000);
         letter-spacing: 0.02em;
     }
@@ -24,14 +27,14 @@
             margin-left: auto;
             display: flex;
             @include font(Cera Pro, normal, 400, 14px, 18px, #000000);
-            transform: rotate(90deg) translate(-15px, -30px);
+            transform: rotate(90deg) translate(-16px, -46px);
         }
     }
     &__text {
         width: 80px;
         @include font(Cera Pro, normal, 500, 13px, 13px, #000000);
         letter-spacing: 0.04em;
-        transform: rotate(-90deg) translate(-40px, -30px);
+        transform: rotate(-90deg) translate(-39px, -26px);
         text-align: right;
         &--year {
             width: 34px;
@@ -39,7 +42,7 @@
             font-size: 14px;
             line-height: 18px;
             letter-spacing: 0;
-            transform: rotate(90deg) translate(55px, -7px);
+            transform: rotate(90deg) translate(36px, -23px);
         }
     }
     &__background {
@@ -72,7 +75,7 @@
     display: block;
     &__img {
         &--virna {
-            margin-top: 5px;
+            margin-top: 7px;
         }
     }
 }
@@ -92,11 +95,11 @@
     box-sizing: border-box;
     &__item {
         &--like {
-            margin-left: 33px;
+            margin-left: 31px;
         }
         &--camera,
         &--cart {
-            margin-left: 20px;
+            margin-left: 17px;
         }
         &--lang {
             margin-left: auto;
