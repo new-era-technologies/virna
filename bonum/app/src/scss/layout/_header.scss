@@ -300,7 +300,7 @@
 @media all and (min-width: 1920px) {
     .header {
         &__wrapper {
-            padding-top: 155px;
+            padding-top: 153px;
         }
         &__inner {
             margin-right: 145px;
@@ -308,17 +308,21 @@
         &__link {
             &--store {
                 margin-right: 145px;
+                transform: rotate(90deg) translate(58px, -35px);
             }
         }
         &__text {
+            transform: rotate(-90deg) translate(-44px, -32px);
             &--year {
                 margin-right: 145px;
+                transform: rotate(90deg) translate(82px, -35px);
             }
         }
         &__title {
-            margin-top: 222px;
+            margin-top: 213px;
             font-size: 74px;
             line-height: 74px;
+            letter-spacing: 0;
         }
         &__background {
             &--blur {
@@ -343,10 +347,10 @@
             }
             &--camera,
             &--cart {
-                margin-left: 5px;
+                margin-left: 0;
             }
             &--lang {
-                margin-left: 295px;
+                margin-left: 291px;
             }
         }
     }
