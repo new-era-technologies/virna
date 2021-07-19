@@ -344,30 +344,49 @@
 
 @media all and (min-width: 1920px) {
     .colors {
-        &__wrapper {}
-        &__title {}
-        &__text {}
-        &__description {}
+        &__wrapper {
+            padding-top: 37px;
+        }
+        &__title {
+            margin-left: 902px;
+        }
+        &__text {
+            transform: rotate(-90deg) translate(-62px, 171px);
+        }
+        &__description {
+            margin: 32px 254px 0 auto;
+        }
     }
     .project {
-        &__title {}
-        &__description {}
-        &__text {
-            &--bright {}
+        &__title {
+            margin-left: 233px;
         }
-        &__inner {}
-        &__rec {}
+        &__description {
+            margin-left: 469px;
+        }
+        &__text {
+            transform: rotate(-90deg) translate(85px, 22px);
+            &--bright {
+                transform: rotate(-90deg) translate(42px, 22px);
+            }
+        }
+        &__inner {
+            margin-top: -30px;
+        }
     }
     .recs {
-        &--right {}
-        &--left {}
-        &__rec>div {}
-        &__rec>p {}
+        &--right {
+            margin-top: 43px;
+        }
+        &--left {
+            margin-top: -97px;
+            margin-left: 306px;
+        }
         &__rec {
-            &--thi,
-            &--fif,
-            &--six {}
-            &--six {}
+            &--fou>p {
+                margin-top: 5px;
+                margin-left: -4px;
+            }
         }
     }
 }
