@@ -285,13 +285,13 @@
             padding-top: 150px;
         }
         &__title {
-            margin-left: 900px;
+            margin-left: 902px;
         }
         &__text {
-            transform: rotate(-90deg) translate(-25px, 175px);
+            transform: rotate(-90deg) translate(-29px, 175px);
         }
         &__description {
-            margin: 20px 195px 0 auto;
+            margin: 30px 195px 0 auto;
         }
         &__inner {
             height: 420px;
@@ -304,7 +304,7 @@
     }
     .filters {
         &__title {
-            transform: rotate(-90deg) translate(-160px, -100px);
+            transform: rotate(-90deg) translate(-158px, -85px);
         }
         &__list {
             margin-top: 142px;
@@ -315,10 +315,10 @@
         }
     }
     .clear {
-        margin-top: 50px;
+        margin-top: 52px;
         &__btn {
             &--close {
-                margin-right: 500px;
+                margin-right: 490px;
             }
         }
     }

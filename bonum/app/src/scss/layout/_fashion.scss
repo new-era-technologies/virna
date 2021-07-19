@@ -263,29 +263,39 @@
             padding-top: 247px;
         }
         &__title {
-            margin-left: 900px;
+            margin-left: 902px;
+        }
+        &__inner {
+            margin-top: -12px;
         }
     }
     .pattern {
         &__list {
-            margin-left: 335px;
+            margin-left: 338px;
         }
         &__img {
-            margin-left: 180px;
+            margin-left: 182px;
         }
     }
     .card {
         &__figure {
             width: 330px;
-            margin: 40px 220px 0 auto;
+            margin: 40px 240px 0 auto;
+        }
+        &__link {
+            transform: rotate(-90deg) translate(309px, 55px);
         }
     }
     .figure {
         &__list {
             margin: 50px auto 0;
         }
+        &__title {
+            width: 277px;
+            margin: 17px auto 0;
+        }
         &__price {
-            margin-top: 16px;
+            margin-top: 15px;
         }
     }
 }
