@@ -115,7 +115,7 @@
 @media all and (min-width: 768px) {
     .colors {
         &__wrapper {
-            padding-top: 100px;
+            padding-top: 118px;
         }
         &__title {
             margin-left: 360px;
@@ -124,16 +124,16 @@
             width: 44px;
             font-size: 16px;
             line-height: 20px;
-            transform: rotate(-90deg) translate(-50px, -10px);
+            transform: rotate(-90deg) translate(-62px, -13px);
         }
         &__description {
-            margin: 15px 0 0 auto;
+            margin: 29px -18px 0 auto;
         }
     }
     .project {
-        margin-top: 50px;
+        margin-top: 67px;
         &__title {
-            margin: 0 0 0 50px;
+            margin: 0 0 0 34px;
         }
         &__description {
             margin-left: 195px;
@@ -143,25 +143,29 @@
             width: 61px;
             font-size: 14px;
             line-height: 18px;
-            transform: rotate(-90deg) translate(45px, 23px);
+            transform: rotate(-90deg) translate(46px, 37px);
+            &--bright {
+                transform: rotate(-90deg) translate(40px, 37px);
+            }
         }
         &__inner {
-            margin-top: 26px;
+            margin-top: 8px;
         }
         &__rec {
             width: 190px;
             height: 51px;
-            margin-right: 20px;
+            margin-right: 4px;
         }
     }
     .recs {
         &--right {
             height: 166px;
             margin-top: 76px;
-            margin-right: 60px;
+            margin-right: 43px;
+            margin-left: auto;
         }
         &--left {
-            margin-top: -42px;
+            margin-top: -58px;
             margin-left: 50px;
         }
         &__rec {

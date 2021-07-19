@@ -124,7 +124,7 @@
             margin-left: 360px;
         }
         &__inner {
-            padding-top: 45px;
+            padding-top: 35px;
             flex-direction: row;
             justify-content: space-between;
             align-items: baseline;
@@ -140,18 +140,24 @@
     }
     .card {
         padding-top: 0;
+        &__description {
+            margin-right: -16px;
+        }
         &__figure {
             width: 172px;
-            margin: 35px 95px 0 auto;
+            margin: 40px 81px 0 auto;
         }
         &__link {
             width: 130px;
             font-size: 14px;
             line-height: 18px;
-            transform: rotate(-90deg) translate(185px, 60px);
+            transform: rotate(-90deg) translate(187px, 72px);
         }
     }
     .figure {
+        &__title {
+            width: 170px;
+        }
         &__list {
             margin: 15px auto 0;
         }
