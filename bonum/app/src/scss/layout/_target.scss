@@ -256,18 +256,24 @@
             padding-top: 158px;
         }
         &__description {
-            margin: 20px 100px 0 auto;
+            margin: 30px 95px 0 auto;
         }
         &__img {
-            top: -190px;
+            top: -192px;
             left: 165px;
         }
     }
+    .filters {
+        &__qnt {
+            margin-right: 0;
+            padding-top: 49px;
+        }
+    }
     .clear {
-        margin-top: 55px;
+        margin-top: 58px;
         &__btn {
             &--close {
-                margin-right: 395px;
+                margin-right: 394px;
             }
         }
     }
