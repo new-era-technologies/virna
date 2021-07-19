@@ -240,6 +240,20 @@
         &__wrapper {
             padding-top: 202px;
         }
+        &__inner {
+            margin-top: -9px;
+        }
+    }
+    .card {
+        &__description {
+            margin-right: 0;
+        }
+        &__figure {
+            margin: 37px 190px 0 auto;
+        }
+        &__link {
+            transform: rotate(-90deg) translate(200px, 55px);
+        }
     }
 }
 
