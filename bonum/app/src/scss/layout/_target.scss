@@ -210,11 +210,11 @@
             width: 35px;
             font-size: 16px;
             line-height: 20px;
-            transform: rotate(-90deg) translate(-10px, -10px);
+            transform: rotate(-90deg) translate(-22px, -8px);
         }
         &__description {
             width: 375px;
-            margin: 20px 93px 0 auto;
+            margin: 31px 80px 0 auto;
             font-size: 14px;
             line-height: 19px;
         }
@@ -223,27 +223,28 @@
             margin-top: 115px;
         }
         &__img {
-            top: -195px;
-            left: 140px;
+            top: -196px;
+            left: 156px;
         }
     }
     .filters {
         &__title {
-            transform: rotate(-90deg) translate(-130px, -65px);
+            transform: rotate(-90deg) translate(-123px, -64px);
         }
         &__list {
-            margin-top: 107px;
-            margin-right: 253px;
+            margin-top: 106px;
+            margin-right: 254px;
         }
         &__qnt {
+            margin-right: -15px;
             padding-top: 50px;
         }
     }
     .clear {
-        margin-top: 45px;
+        margin-top: 48px;
         &__btn {
             &--close {
-                margin-right: 390px;
+                margin-right: 376px;
             }
         }
     }
